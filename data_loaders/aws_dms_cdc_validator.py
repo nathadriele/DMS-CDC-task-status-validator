@@ -28,7 +28,7 @@ def get_dms_client():
 def load_data(*args, **kwargs):
     client = get_dms_client()
     results = []
-    
+
     for task_name, task_arn in TASKS.items():
         try:
             client.describe_replication_tasks(Filters=[
@@ -38,7 +38,7 @@ def load_data(*args, **kwargs):
             print(f"{task_name}: Replication task not found")
             results.append((task_name, 'Replication task not found'))
             continue
-        
+
         validation_details = client.describe_table_statistics(
             ReplicationTaskArn=task_arn
         )
@@ -50,7 +50,7 @@ def load_data(*args, **kwargs):
 
         event_name = f"{task_name} dms mage"
         status = "Failed" if has_error else "Validated"
-        
+
         response = requests.post(
             NOTIFIER_URL,
             json={'name': event_name, 'status': status}
@@ -59,7 +59,7 @@ def load_data(*args, **kwargs):
 
         print(f"{task_name}: Status {status}!")
         results.append((task_name, status))
-    
+
     return results
 
 @test
