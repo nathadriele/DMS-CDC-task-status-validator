@@ -29,7 +29,7 @@ The objective of this project is to automate the monitoring of AWS DMS CDC tasks
 1. Clone the repository:
 
 ```py
-git clone https://github.com/yourusername/aws-dms-cdc-validator.git
+git clone https://github.com/nathadriele/aws-dms-cdc-validator.git
 cd aws-dms-cdc-validator
 ```
 
