@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2024-08-01 15:21:09.548536
+  name: dms_tasks_cdc_validation
+  pipeline_uuid: dms_tasks_cdc_validation
+  schedule_interval: @daily
+  schedule_type: time
+  settings:
+   landing_time_enabled: true
+  sla: null
+  start_time: 2024-08-01 08:00:00
+  status: active
+  variables: []
