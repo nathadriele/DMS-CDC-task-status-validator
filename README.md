@@ -17,3 +17,11 @@ The primary challenge addressed by this project is the lack of monitoring for AW
 ### Objective
 
 The objective of this project is to automate the monitoring of AWS DMS CDC tasks, validate their status, and notify the responsible team if any tasks are not in a validated state. This ensures that any issues are promptly addressed, maintaining data integrity and synchronization.
+
+### Prerequisites
+
+- `AWS` account with necessary permissions for DMS and Secrets Manager.
+- `Mage.ai` installed and configured.
+- `boto3` and requests libraries installed in your Python environment.
+
+  
