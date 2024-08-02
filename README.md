@@ -1,4 +1,4 @@
-## DMS-CDC-task-status-validator
+## DMS CDC Task Status Validator
 
 ### Introduction
 
@@ -24,4 +24,43 @@ The objective of this project is to automate the monitoring of AWS DMS CDC tasks
 - `Mage.ai` installed and configured.
 - `boto3` and requests libraries installed in your Python environment.
 
-  
+### Installation
+
+1. Clone the repository:
+
+```py
+git clone https://github.com/yourusername/aws-dms-cdc-validator.git
+cd aws-dms-cdc-validator
+```
+
+2. Install required Python libraries:
+
+```py
+pip install boto3 requests
+```
+
+### Code Explanation
+
+#### Imports and Setup
+
+The code begins by importing necessary libraries and setting up the AWS client. The boto3 library is used for interacting with AWS services, and requests is used for making HTTP requests to send notifications.
+
+#### Configuration of Logging
+
+Logging is configured to capture and display information about the process, including any errors encountered.
+
+#### Data Loader Function
+
+The load_data function is the core of the script. It retrieves the necessary AWS credentials using the get_secret_value function and initializes the DMS client.
+
+### Validation Logic
+
+The script iterates over each task, checks its replication status, and validates the table statistics. If any table is not validated, an error flag is set.
+
+### Notification
+
+Based on the validation results, the script sends notifications via an HTTP POST request. If validation errors are found, a failure notification is sent; otherwise, a success notification is sent.
+
+### Testing
+
+The `test_output` function is used to ensure that the load_data function produces a defined output, aiding in validation during development.
