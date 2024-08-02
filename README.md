@@ -64,3 +64,7 @@ Based on the validation results, the script sends notifications via an HTTP POST
 ### Testing
 
 The `test_output` function is used to ensure that the load_data function produces a defined output, aiding in validation during development.
+
+### Contribution to Data Engineering
+
+This project automates the monitoring and validation of AWS DMS CDC tasks, a crucial aspect of maintaining data integrity and synchronization during database migrations. By providing automated notifications for validation issues, it ensures that data engineers are promptly informed of any problems, allowing for quick resolution and minimal disruption to data workflows.
