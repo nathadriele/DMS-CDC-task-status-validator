@@ -6,7 +6,6 @@ from mage_ai.data_preparation.decorators import data_loader, test
 DMS_REGION = 'us-east-1'
 NOTIFIER_URL = 'https://api.notifier.engineering.test.com/events'
 
-# Dictionary of tasks and their ARNs.
 TASKS = {
     'task-DMS-CDC-1': 'arn:aws:dms:cdc-1',
     'task-DMS-CDC-2': 'arn:aws:dms:cdc-2',
