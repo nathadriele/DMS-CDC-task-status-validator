@@ -2,15 +2,11 @@
 
 ![image](https://github.com/user-attachments/assets/80e001e6-b771-437e-a88e-080321ffe5ea)
 
-### About
+### Overview
 
 This project, developed using Mage.ai, aims to validate the status of AWS Database Migration Service (DMS) Change Data Capture (CDC) tasks. At the time of its creation, there was no existing monitoring solution for the status of these tasks. This code periodically checks the validation status of the CDC tasks and sends notifications if any issues are detected.
 - **Mage.ai** is a data pipeline tool that enables rapid development, testing, and deployment of data processing workflows.
 - **AWS DMS** is a service designed to simplify the process of migrating databases to AWS. One of its key features, **Change Data Capture (CDC)**, allows the continuous replication of changes from a source database to a target database in near real-time. This is particularly useful for maintaining data consistency and ensuring that the target database remains synchronized with the source.
-
-### Overview
-
-This project provides a solution to monitor and validate the status of AWS DMS CDC tasks. The script checks the status of each specified CDC task and sends notifications via an HTTP API if any validation issues are detected.
 
 ### Problem Description
 
