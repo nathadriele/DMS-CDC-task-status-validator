@@ -1,6 +1,6 @@
 ## DMS CDC Task Status Validator
 
-![image](https://github.com/user-attachments/assets/80e001e6-b771-437e-a88e-080321ffe5ea)
+![image](https://github.com/user-attachments/assets/1ef81492-b4db-4191-86f0-cb9a18251452)
 
 ### Overview
 
